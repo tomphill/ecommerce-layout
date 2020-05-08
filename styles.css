@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.categories {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 33.33%;
+    border: 2px solid white;
+    box-sizing: border-box;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.category-item-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.category-item-inner > div {
+    padding: 5px 10px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+    .category-item {
+        min-width: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+    .category-item {
+        min-width: 100%;
+    }
+}
+
+.featured-products {
+    margin-top: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+
+@media (max-width: 1000px) {
+    .featured-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .featured-products {
+        grid-template-columns: 1fr;
+    }
+}
+
+.featured-products-title {
+    text-align: center;
+}
+
+.featured-product-item {
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+.featured-product-item-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.featured-product-item > .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.featured-product-item > .description {
+    color: #666;
+}
+
+.featured-product-item > .price {
+    font-style: italic;
+}
+
+button {
+    outline: none;
+    background: black;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+}
