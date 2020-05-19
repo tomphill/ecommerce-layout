@@ -62,6 +62,10 @@ body {
     grid-gap: 20px;
 }
 
+.filter-section {
+    margin-bottom: 20px;
+}
+
 @media (max-width: 600px) {
     .featured-products {
         grid-template-columns: 1fr;
